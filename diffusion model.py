@@ -126,6 +126,7 @@ def diffusion_loss_fn(model, x_0, alphas_bar_sqrt, one_minus_alphas_bar_sqrt, n_
     # 与真实噪声一起计算误差，求平均值
     return (e - output).square().mean()
 
+   #sdghsgdshgsh
 
 def p_sample_loop(model, shape, n_steps, betas, one_minus_alphas_bar_sqrt):
     """从x[T]恢复x[T-1]、x[T-2]|...x[0]"""
